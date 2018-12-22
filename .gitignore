@@ -4,3 +4,5 @@ composer.lock
 
 *.css.map
 .sass-cache
+database.php
+source/application/database.php

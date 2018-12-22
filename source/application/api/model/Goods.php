@@ -47,4 +47,9 @@ class Goods extends GoodsModel
             ->where('goods_id', 'in', $goodsIds)->select();
     }
 
+    public function getGoodsListByCategoryId($categoryId)
+    {
+        $this->getList(null,$categoryId);
+    }
+
 }

@@ -27,6 +27,7 @@
                                 <div id="components">
                                     <nav class="special" data-type="search"> 搜索框</nav>
                                     <nav class="special" data-type="banner"> 图片轮播</nav>
+                                    <nav class="special" data-type="classify"> 分类导航</nav>
                                 </div>
                             </div>
                         </div>

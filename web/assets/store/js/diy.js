@@ -35,6 +35,24 @@
                         linkUrl: ''
                     }
                 ]
+            },
+            classify: {
+                style: {
+                    btnColor: '#ffffff',
+                    btnShape: 'round'
+                },
+                data: [
+                    {
+                        imgUrl: BASE_URL + 'assets/store/img/diy/banner_01.jpg',
+                        imgName: 'banner-1.jpg',
+                        linkUrl: ''
+                    },
+                    {
+                        imgUrl: BASE_URL + 'assets/store/img/diy/banner_02.jpg',
+                        imgName: 'banner-2.jpg',
+                        linkUrl: ''
+                    }
+                ]
             }
         }
 

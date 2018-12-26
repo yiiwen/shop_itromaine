@@ -43,13 +43,13 @@
                 },
                 data: [
                     {
-                        imgUrl: BASE_URL + 'assets/store/img/diy/banner_01.jpg',
-                        imgName: 'banner-1.jpg',
+                        imgUrl: BASE_URL + 'assets/store/img/diy/classify_01.jpg',
+                        imgName: 'classify_01.jpg',
                         linkUrl: ''
                     },
                     {
-                        imgUrl: BASE_URL + 'assets/store/img/diy/banner_02.jpg',
-                        imgName: 'banner-2.jpg',
+                        imgUrl: BASE_URL + 'assets/store/img/diy/classify_02.jpg',
+                        imgName: 'classify_02.jpg',
                         linkUrl: ''
                     }
                 ]
@@ -260,8 +260,40 @@
                         // 选择图片
                         method.editor.event.selectImages($html);
                         $items.append($html);
-                    }
-
+                    },
+                    /**
+                     * 添加classify
+                     * @param itemId
+                     * @param $items
+                     */
+                     classify: function (itemId, $items) {
+                         var data = method.diyData.additemData(itemId, 'classify')
+                             , $html = $(
+                             '<div class="item" data-key="' + data.dataId + '">' +
+                             '  <div class="container">' +
+                             '    <div class="item-image"> <img src="' + data.imgUrl + '" alt=""> </div>' +
+                             '    <div class="item-form am-form-file">' +
+                             '        <div class="input-group">' +
+                             '            <input type="text" name="imgName" data-bind="data.' + data.dataId + '.imgName"' +
+                             '               value="' + data.imgName + '" placeholder="请选择图片" readonly>' +
+                             '            <span class="input-group-addon">选择图片</span>' +
+                             '            <input type="hidden" name="imgUrl" data-bind="data.' + data.dataId + '.imgUrl"' +
+                             '                value="' + data.imgUrl + '">' +
+                             '        </div>' +
+                             '        <div class="input-group" style="margin-top:10px;">' +
+                             '            <input type="text" name="linkUrl" data-bind="data.' + data.dataId + '.linkUrl"' +
+                             '               value="" placeholder="请输入链接地址    例：page/index/index">' +
+                             '        </div>' +
+                             '    </div>' +
+                             '  </div>' +
+                             '  <i class="iconfont icon-shanchu item-delete"></i>' +
+                             '</div>'
+                         );
+                         console.log('asd');
+                         // 选择图片
+                         method.editor.event.selectImages($html);
+                         $items.append($html);
+                     }
                 },
 
                 // 事件方法

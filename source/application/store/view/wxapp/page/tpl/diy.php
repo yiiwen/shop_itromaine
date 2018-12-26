@@ -39,7 +39,7 @@
 <!-- diy元素: 分类导航 -->
 <script id="tpl_diy_classify" type="text/template">
     <div class="drag" id="diy-{{ id }}" data-itemid="{{ id }}">
-        <div class="diy-banner">
+        <div class="diy-classify">
             {{each data}}
                 <img src="{{ $value.imgUrl }}">
             {{/each}}
